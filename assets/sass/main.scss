@@ -1647,3 +1647,41 @@
 			}
 
 	}
+
+/* Mailchimp Signup */	
+#mc_embed_signup {
+	max-width: 460px;
+	background: #2e323a;
+	clear:left;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	border-radius: 5px;
+	margin: auto;
+	padding: 0.3em 1em;
+}
+
+#mc_embed_signup h2 {
+	font-size: 1.2em;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+#mc_embed_signup input.button {
+	width: 96%;
+	height: 50px;
+}
+
+#mc_embed_signup .mc-field-group label {
+	color: white;
+}
+
+#mc_embed_signup .mce-success-response {
+	color: #444;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 1em;
+	background-color: white;
+	width: 100%;
+}
