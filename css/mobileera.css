@@ -1,0 +1,309 @@
+body {
+	display: flex;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+
+.fa {
+	font-family: FontAwesome;
+}
+
+/*
+ * LAYOUT
+ */
+body > * {
+	flex-basis: 100%;
+}
+
+body > header {
+	max-height: 80px;
+}
+
+
+body > header {
+	flex-basis: 250px;
+	flex-grow: 0;
+}
+
+body > #menuToggle {
+	flex-basis: auto;
+	flex-grow: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+
+body > #menu {
+	flex-basis: 100%;
+	flex-grow: 1;
+}
+#menu {
+	display: none;			
+}
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#menu li {
+	flex-basis: 100%;
+	text-align: center;
+}
+
+
+section img {
+	width: 90%;
+	padding: 0.5em;
+	max-width: 900px;
+}
+
+body > section, body > footer {
+	padding-top: 1em;
+	padding-bottom: 3em;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+body > section > h2 {
+	position: relative;
+	top: -3.25em;
+	height: 2em;
+	line-height: 3.25em;
+	margin-bottom: -3.5em;
+	left: 50%;
+	text-align: center;
+	margin-top: 0.25em;
+	font-size: 0.9em;
+	width: 18em;
+	margin-left: -9em;
+}
+body > section > h2:after,
+body > section > h2:before {
+	background: url("../images/shadow.png");
+	content: '';
+	height: 15px;
+	bottom: -14px;
+	width: 35px;
+	position: absolute;
+}
+body > section > h2:before {
+	left: -35px;
+}
+body > section > h2:after {
+	transform: scaleX(-1);
+	right: -35px;
+}
+
+/*
+ * COMPONENTS
+ */
+ /* COMPONENT BUTTON DECK */
+.button-deck {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 1em;
+	align-items: stretch;
+}
+.button-deck .button {
+	display: inline-block;
+	flex-basis: 80%;
+	max-width: 12em;
+}
+
+ /* COMPONENT HIGHLIGHT DECK */
+.highlight-deck {
+	margin-top: 2em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.highlight-deck img {
+	max-width: 400px;
+}
+.highlight-deck > section {
+	margin: 1em;
+}
+
+ /* COMPONENT ICON DECK */
+.icon-deck {
+	max-width: 900px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.icon-card {
+	flex-basis: 250px;
+	flex-grow: 1;
+}
+.icon-card .icon:before {
+	font-family: FontAwesome;
+	border-radius: 1.75em;
+	width: 1.75em;
+	height: 1.75em;
+	line-height: 1.75em;
+	text-align: center;
+	display: inline-block;
+	margin-right: 1em;
+}
+.content .icon-card h3 {
+	margin-bottom: 0;
+}
+.content .icon-card p {
+	margin-top: 0;
+	padding-left: 3em;
+	text-align: left;
+}
+
+a.button, a.button2 {
+    display: inline-block;
+	text-align: center;
+	line-height: 1em;
+	padding: 1em;
+	margin: 0.5em;
+	border-radius: 4px;
+	font-size: 20px;
+	max-width: 900px;
+}
+
+body > header {
+	padding: 1em 2em 0 2em;
+}
+body > nav {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+
+
+@media(min-width: 750px) {
+	#menu li {
+		display: inline-block;
+		flex-basis: auto;
+		padding: 0.4em;
+	}
+	body > #menu {
+		display: block;
+		flex-basis: auto;
+	}
+	body > #menuToggle {
+		display: none;
+	}
+
+	body > section > h2 {
+		margin-left: -12.5em;
+		width: 25em;
+		font-size: 1.2em;
+		height: 2.2em;
+	}
+	.button-deck .button {
+		flex-basis: auto;
+	}
+	.highlight-deck {
+		flex-direction: row;
+	}
+	.highlight-deck > section {
+		flex: 1 1 250px;
+	}
+}
+
+#actions {
+	padding-bottom: 5em;
+}
+
+.content p.box-paragraph {
+	text-align: center;
+	font-size: 1.8em;
+	margin-top: 1em;
+	padding: 1em;
+	line-height: 1.25em;
+	font-weight: bold;
+	border-radius: 0.35em;
+	border: 1px solid #555;
+}
+
+@media(min-width: 750px) {
+	p.box-paragraph {
+		font-size: 2.5em;
+	}
+}
+
+/*
+ * THEME
+ */
+a {
+ 	color: inherit;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: whitesmoke;
+	background: #445;
+	background: radial-gradient(ellipse 500px 2000px at 50% 80vh, #445, #111);
+}
+
+.content p {
+	font-size: 16px;
+	text-align: center;
+}
+
+.content {
+	padding-top: 1em;
+}
+
+#introduction, #introduction h2 {
+	background: #a6f7ff url("../images/overlay.png");
+	color:  #484d55;			
+}
+#introduction .icon:before {
+	/* invert colors */
+	background-color: #484d55;
+	color: #a6f7ff;
+}
+
+#description, #description h2, #contact, #contact h2, footer {
+	background: #555555 url("../images/overlay.png");
+	color:  whitesmoke;			
+}
+#description .icon:before, #contact .icon:before {
+	/* invert colors */
+	background-color: whitesmoke;
+	color: #555;
+}
+
+#contribute, #contribute h2 {
+	background: #f3f3f3 url("../images/overlay.png");
+	color:  #484d55;			
+}
+
+
+h2 {
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+}
+
+a.button, a.button2 {
+	text-decoration: none;
+	font-weight: bold;
+	color: #333;
+	background-color: #bbb;
+}
+
+h3 a {
+	text-decoration: none;
+}
+
+#menuToggle a, #menu a {
+	color: whitesmoke;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 0.25em;
+}
+#menuToggle a, #menu a:hover {
+	color: white;
+}
