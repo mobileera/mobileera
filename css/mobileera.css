@@ -159,7 +159,7 @@ body > section > h2:after {
 	text-align: left;
 }
 
-a.button, a.button2 {
+a.button {
     display: inline-block;
 	text-align: center;
 	line-height: 1em;
@@ -297,6 +297,10 @@ h3 a {
 	text-decoration: none;
 }
 
+
+#menuToggle .current a, #menu .current a {
+	font-weight: bold;
+}
 #menuToggle a, #menu a {
 	color: whitesmoke;
 	text-decoration: none;
