@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mobile Era Conference</title>
+    <description>Mobile Era is Norway&#39;s first conference for mobile technologists.
+</description>
+    <link>http://mobileera.rocks/</link>
+    <atom:link href="http://mobileera.rocks/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 16 Dec 2015 16:02:38 +0100</pubDate>
+    <lastBuildDate>Wed, 16 Dec 2015 16:02:38 +0100</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+  </channel>
+</rss>
