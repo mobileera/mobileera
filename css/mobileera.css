@@ -67,6 +67,17 @@ body > section, body > footer {
 	padding-right: 2em;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content > p {
+    max-width: 700px;
+}
+
+
 body > section > h2 {
 	position: relative;
 	top: -3.25em;
@@ -116,7 +127,6 @@ body > section > h2:after {
 
  /* COMPONENT HIGHLIGHT DECK */
 .highlight-deck {
-	margin-top: 2em;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -252,7 +262,8 @@ body {
 }
 
 .content {
-	padding-top: 1em;
+	padding-top: 2em;
+    padding-bottom: 1em;
 }
 
 #introduction, #introduction h2 {
@@ -266,13 +277,13 @@ body {
 }
 
 #description, #description h2, #contact, #contact h2, footer {
-	background: #555555 url("../images/overlay.png");
+	background: #222 url("../images/overlay.png");
 	color:  whitesmoke;			
 }
 #description .icon:before, #contact .icon:before {
 	/* invert colors */
 	background-color: whitesmoke;
-	color: #555;
+	color: #222;
 }
 
 #contribute, #contribute h2 {
@@ -286,7 +297,7 @@ h2 {
 	letter-spacing: 0.25em;
 }
 
-a.button, a.button2 {
+.button, #mc_embed_signup .button {
 	text-decoration: none;
 	font-weight: bold;
 	color: #333;
