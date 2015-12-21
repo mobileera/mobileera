@@ -5,10 +5,6 @@ body {
 	align-items: flex-end;
 }
 
-.fa {
-	font-family: FontAwesome;
-}
-
 /*
  * LAYOUT
  */
@@ -38,7 +34,7 @@ body > #menu {
 	flex-grow: 1;
 }
 #menu {
-	display: none;			
+	display: none;
 }
 #menu ul {
 	list-style: none;
@@ -144,28 +140,31 @@ body > section > h2:after {
 	max-width: 900px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 }
 .icon-card {
-	flex-basis: 250px;
+	flex-basis: 33%;
+	min-width: 250px;
 	flex-grow: 1;
 }
-.icon-card .icon:before {
-	font-family: FontAwesome;
-	border-radius: 1.75em;
-	width: 1.75em;
-	height: 1.75em;
-	line-height: 1.75em;
-	text-align: center;
-	display: inline-block;
-	margin-right: 1em;
+
+.icon-card .fa-stack-1x {
+	color: #222;
 }
+
+.icon-card .fa-stack-2x {
+	color: whitesmoke;
+}
+
 .content .icon-card h3 {
 	margin-bottom: 0;
+	margin-top: 0;
+	padding-left: 3rem;
+	line-height: 2rem;
 }
 .content .icon-card p {
 	margin-top: 0;
-	padding-left: 3em;
+	padding-left: 3rem;
 	text-align: left;
 }
 
@@ -268,27 +267,18 @@ body {
 
 #introduction, #introduction h2 {
 	background: #a6f7ff url("../images/overlay.png");
-	color:  #484d55;			
-}
-#introduction .icon:before {
-	/* invert colors */
-	background-color: #484d55;
-	color: #a6f7ff;
+	color:  #484d55;
 }
 
 #description, #description h2, #contact, #contact h2, footer {
 	background: #222 url("../images/overlay.png");
-	color:  whitesmoke;			
+	color:  whitesmoke;
 }
-#description .icon:before, #contact .icon:before {
-	/* invert colors */
-	background-color: whitesmoke;
-	color: #222;
-}
+
 
 #contribute, #contribute h2 {
 	background: #f3f3f3 url("../images/overlay.png");
-	color:  #484d55;			
+	color:  #484d55;
 }
 
 
