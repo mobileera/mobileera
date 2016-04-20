@@ -275,18 +275,14 @@ body {
 	padding-bottom: 1em;
 }
 
-#introduction, #introduction h2 {
-	background: #a6f7ff url("../images/overlay.png");
-	color:  #484d55;
-}
-
-#description, #description h2, #contact, #contact h2, footer {
+section.dark, section.dark h2,
+footer {
 	background: #222 url("../images/overlay.png");
 	color:  whitesmoke;
 }
 
 
-#contribute, #contribute h2 {
+section.bright, section.bright h2 {
 	background: #f3f3f3 url("../images/overlay.png");
 	color:  #484d55;
 }
