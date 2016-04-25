@@ -134,6 +134,10 @@ body > section > h2:after {
 .highlight-deck > section {
 	margin: 1em;
 }
+.highlight-deck ul {
+	text-align: left;	
+}
+
 
  /* COMPONENT ICON DECK */
 .icon-deck {
